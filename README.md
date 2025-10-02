@@ -19,7 +19,7 @@ Topics include:
 - (and so on...)
 
 Each assignment folder contains:
-- **Code** (Python/R)
+- **Code** (Python)
 - **Report/solutions** (PDF/HTML/Notebook)
 - **Results/plots**
 
