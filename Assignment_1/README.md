@@ -2,8 +2,8 @@
 
 **Goal:**  
 Formulate a predictive learning problem from scratch and connect the abstract definitions  
-(sample space 𝒳, label space 𝒴, loss ℓ, distance d, evaluation)  
-to a practical example: predicting students’ final Machine Learning grade.
+(sample space $\mathcal{X}$, label space $\mathcal{Y}$, loss $\ell$, distance $d$, and evaluation metrics)  
+to a practical example — predicting students’ final *Machine Learning A* grades.
 
 ---
 
@@ -12,49 +12,64 @@ We imagine a model predicting the final grade of a student based on prior academ
 
 | Variable | Description | Type |
 |-----------|--------------|------|
-| X₁ | Linear Algebra grade | continuous [0–100] |
-| X₂ | Probability & Statistics grade | continuous [0–100] |
-| X₃ | Introduction to Programming grade | continuous [0–100] |
-| X₄ | Completed Python course (0 = No, 1 = Yes) | binary |
-| X₅ | Department (1 = Math, 2 = Statistics, 3 = CS) | categorical |
+| $X_1$ | Linear Algebra grade | continuous [0–100] |
+| $X_2$ | Probability & Statistics grade | continuous [0–100] |
+| $X_3$ | Introduction to Programming grade | continuous [0–100] |
+| $X_4$ | Completed Python course (0 = No, 1 = Yes) | binary |
+| $X_5$ | Department (1 = Math, 2 = Statistics, 3 = CS) | categorical |
 
-Thus 𝒳 ⊂ ℝ⁵ × {0, 1, 2, 3}, and  
-the label space 𝒴 = [0, 100] ⊂ ℝ represents final grades.
+Hence  
+
+- Sample space  $ \mathcal{X} \subset \mathbb{R}^5 \times \{0,1,2,3\}$  
+- Label space  $ \mathcal{Y} = [0,100] \subset \mathbb{R}$ represents final grades.
 
 ---
 
 ## Methodology
-1. **Loss function:**  
-   Mean Squared Error  
-   \[
-   \text{MSE}=\frac1n\sum_i (y_i-\hat y_i)^2
-   \]
-2. **Algorithm:**  
-   Implemented the *K-Nearest Neighbors* regressor using **Euclidean distance**  
-   \[
-   d(x,x')=\sqrt{\sum_j (x_j-x'_j)^2}
-   \]
-3. **Validation strategy:**  
-   Split data into **train / test** sets to estimate predictive performance.  
-   Computed MSE and accuracy metrics.
-4. **Bias & overfitting discussion:**  
-   Illustrated how small K → high variance, large K → high bias,  
+
+1. **Loss Function**  
+   Mean Squared Error (MSE):  
+
+   $$
+   \text{MSE} = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2
+   $$
+
+2. **Algorithm**  
+   Implemented the *K-Nearest Neighbors* (KNN) regressor using Euclidean distance:
+
+   $$
+   d(x, x') = \sqrt{\sum_{j=1}^{d}(x_j - x'_j)^2}
+   $$
+
+3. **Validation Strategy**  
+   Split the dataset into **train / test** subsets to estimate predictive performance.  
+   Computed **MSE** and **accuracy** metrics.  
+
+4. **Bias & Overfitting Discussion**  
+   Illustrated how small $K \Rightarrow$ high variance, large $K \Rightarrow$ high bias,  
    and how limited data causes overfitting.
 
 ---
 
 ##  Insights
-- Formalized every component of a supervised-learning pipeline.  
-- Connected theoretical definitions to an intuitive real-world task.  
-- Discussed validation bias and the i.i.d. assumption.  
-- Built foundation for later assignments on empirical-risk minimization and generalization bounds.
+- Formalized each component of a supervised-learning pipeline ($\mathcal{X}, \mathcal{Y}, \ell, d$).  
+- Connected theoretical definitions to a realistic prediction problem.  
+- Discussed validation bias and the role of the i.i.d. assumption.  
+- Built intuition for later topics such as empirical-risk minimization and generalization bounds.
 
 ---
 
-##  Skills Demonstrated
-Mathematical Modelling · KNN · Validation Design · Bias–Variance Analysis · Python (Numpy/Matplotlib)
+## Skills Demonstrated
+Mathematical Modeling · KNN · Validation Design · Bias–Variance Analysis · Python (NumPy / Matplotlib)
 
 ---
 
-_This project is an independent reconstruction of my learning outcomes from Machine Learning A (UCPH),  
-intended for portfolio and educational purposes._
+## Demo Notebook
+See the accompanying Jupyter Notebook [`knn_distance_demo.ipynb`](knn_distance_demo.ipynb)  
+for a short visual demonstration of KNN regression on synthetic data.
+
+---
+
+_This project is an independent reconstruction of my learning outcomes from  
+**Machine Learning A** at the University of Copenhagen.  
+All code and text are original and intended solely for portfolio and educational purposes._
