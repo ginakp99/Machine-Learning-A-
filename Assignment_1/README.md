@@ -30,16 +30,16 @@ Hence
 1. **Loss Function**  
    Mean Squared Error (MSE):  
 
-   $$
+   $
    \text{MSE} = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2
-   $$
+   $
 
 2. **Algorithm**  
    Implemented the *K-Nearest Neighbors* (KNN) regressor using Euclidean distance:
 
-   $$
+   $
    d(x, x') = \sqrt{\sum_{j=1}^{d}(x_j - x'_j)^2}
-   $$
+   $
 
 3. **Validation Strategy**  
    Split the dataset into **train / test** subsets to estimate predictive performance.  
