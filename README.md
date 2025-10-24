@@ -1,53 +1,64 @@
-# Machine Learning A
+# Machine Learning A (University of Copenhagen)
 
-This repository contains my solutions, code, and reports from the **Machine Learning A** course at the University of Copenhagen.  
-The course combines rigorous mathematical foundations with hands-on algorithmic implementation — bridging theory and practice in modern machine learning.
+This repository presents my **independent re-implementations and analyses** inspired by the *Machine Learning A* course at the University of Copenhagen.  
+The focus is on combining rigorous mathematical theory with practical algorithmic implementation — bridging **statistics, programming, and machine learning theory**.
 
-## Course Focus
+---
 
-The assignments explore both **supervised** and **unsupervised** learning through analytical proofs and Python implementations.
+## Learning Focus
 
-### Covered Topics
+The projects explore both **supervised** and **unsupervised** learning through analytical derivations and Python implementations.
+
+### Core Topics
 - **Supervised Learning:** Linear & Logistic Regression, Perceptron, k-Nearest Neighbors  
 - **Unsupervised Learning:** PCA, k-Means, k-Means++  
-- **Tree-Based Methods:** Decision Trees, Random Forests  
-- **Theory:** Concentration Inequalities (Markov, Chebyshev, Hoeffding), Generalization Bounds (finite & countable hypothesis classes)  
-- **Regularization & Overfitting:** Ridge / Lasso, feature transformations, model complexity control  
-- **Neural Networks:** Introduction to Deep Learning concepts  
+- **Tree-Based Models:** Decision Trees, Random Forests  
+- **Theory:** Concentration Inequalities (Markov, Chebyshev, Hoeffding) and Generalization Bounds  
+- **Regularization & Overfitting:** Ridge / Lasso, feature transformations, model-complexity control  
+- **Neural Networks:** Introduction to Deep Learning principles  
 
+---
 
+##  Repository Structure
+- `Assignment1/` – Supervised learning & KNN fundamentals  
+- `Assignment2/` – Linear regression and gradient descent  
+- `Assignment3/` – Regularization and model selection  
+- `Assignment4/` – Generalization bounds and theory proofs  
+- `Assignment5/` – Tree-based algorithms  
+- `Assignment6/` – PCA and clustering  
+- `Assignment7/` – Neural networks and deep learning introduction  
 
-## Repository Structure
-- `Assignment1/` – First assignment (code, solutions, results)
-- `Assignment2/` – Second assignment
-- `Assignment3/` – Third assignment
-- (and so on...)
+Each folder contains:
+- **Code:** Python implementations (NumPy / scikit-learn)  
+- **Visuals:** Model outputs, evaluation plots  
+- **Discussion:** Reflections and theoretical explanations written independently  
 
-Each folder includes:
-- **Code:** Python implementation from scratch and scikit-learn comparisons  
-- **Results:** Visualizations and evaluation metrics  
-- **Report:** Analytical derivations, theoretical proofs, and interpretation  
+---
 
+##  Portfolio Purpose
 
-## Portfolio Purpose
+This portfolio demonstrates my ability to:
+- **Translate statistical and mathematical theory into working ML models**  
+- **Implement algorithms from first principles and validate performance**  
+- **Diagnose overfitting and reason about generalization**  
+- **Write clear, reproducible, and well-structured analysis code**
 
-This repository demonstrates my ability to:
-- **Translate mathematical theory into working ML code**  
-- **Analyze model generalization and overfitting using statistical reasoning**  
-- **Implement and interpret core algorithms from first principles**  
-- **Produce reproducible, well-documented machine learning pipelines**
+It represents my **personal work and understanding**, not official KU solutions.
 
+---
 
-## Tools & Libraries
+##  Tools & Libraries
 Python · NumPy · scikit-learn · Matplotlib · Jupyter Notebook · LaTeX  
 
 ---
 
-## Author
-**Georgia Olga Kalapotharakou**  
+##  Author
+**Georgia-Olga Kalapotharakou**  
 MSc in Statistics · University of Copenhagen  
 📍 Based in Denmark  
 🔗 [LinkedIn](https://www.linkedin.com/in/georgiakalap) · [GitHub Portfolio](https://github.com/ginakp99)
 
 ---
-_This repository is intended as a portfolio for academic and professional purposes._
+
+_This repository is intended solely as an educational and professional portfolio.  
+All analyses and code are original and independently written._
