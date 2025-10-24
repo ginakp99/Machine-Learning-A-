@@ -1,4 +1,4 @@
-# Assignment 1 – Supervised Learning Foundations (KNN & Regression Concepts)
+l# Assignment 1 – Supervised Learning Foundations (KNN & Regression Concepts)
 
 **Goal:**  
 Formulate a predictive learning problem from scratch and connect the abstract definitions  
